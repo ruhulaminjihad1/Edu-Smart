@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edusamrt</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
 <!-- icon  -->
 <script src="https://kit.fontawesome.com/7f15742db5.js" crossorigin="anonymous"></script>
 </head>
@@ -48,37 +49,49 @@
     </div>
   </nav>
   <!-- navbar section end  -->
-  <section class="pt-5 m-5 ">
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-inner">
-
-        <div class="carousel-item active">
-          
-            <img src="images/cover/cover-1.png" class="d-block w-100 filter:brightness(60%)" alt="...">
-          
-        </div>
-      </div>
-        <div class="carousel-item">
-          <img src="images/cover/cover-1.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="images/cover/cover-1.jpg" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+<section class="container">
+  <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active d-none" aria-current="true" aria-label="Slide 1"></button>
+      <button class="d-none" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button class="d-none" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    
-
-
-
-  </section>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img id="customOpacity" src="images/cover/cover-2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+          <h1>Get Started Digital <br>
+            Learning</h1>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img id="customOpacity" src="images/cover/cover-3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+          <h1>Get Started Digital <br>
+            Learning</h1>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img id="customOpacity" src="images/cover/cover-1.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+          <h1>Get Started Digital <br>
+            Learning</h1>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
 
   <!-- slider start  -->
 
@@ -170,17 +183,37 @@
 
     </section>
     <!-- courses end  -->
-    <section>
-      <div class="bg-primary d-flex m-5 ">
-        <div class="text-center w-50 text-light m-5">
+    <section class="container">
+      <div class="bg-info d-flex  align-items-center justify-content-around p-5 rounded mt-5 flex-md-column">
+        <div class="text-center text-light">
           <h3>Ready to join?</h3><br>
           <p>It is a long established fact that a reader will be distracted <br> by the 
             readable content of a page when looking at its layout.</p>
   
         </div>
-        <div class="text-center w-50 align-center justify-center">
-          <button class="p-2">Register Now</button>
-        </div>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-light h-25 m-3"         data-bs-toggle="modal" data-bs-target="#exampleModal">
+                   Register Now
+         </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <input type="email" name="" id="" placeholder="Inter Your Email">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </section>
 
@@ -231,7 +264,7 @@
 
 
     <!-- company section start -->
-    <section>
+    <section class="d-none d-lg-block">
       <div class="text-center">
         <h3>Trusted by over 800+ companies</h3>
       </div>
@@ -264,32 +297,32 @@
 
 
 
-
+  <footer class="bg-dark text-center text-white pt-5">
+    <h1>Edu Smart</h1>
+    <br>
+    <p class="text-white-50">Office 41, Zawaya Buildin, Ghala Muscat, <br>
+  
+    Sultanate of Oman</p>
+    <br>
+    
+  
+  <div class="text-white">
+    
+       <a class="text-white-50" href="">Terms of service</a>   | 
+       <a class="text-white-50" href="">Privacy policy</a>
+       
+    </div>
+    <div class="footer-icon text-white-50 fs-2">
+        <a class="text-white m-2 " href="https://www.facebook.com"><i class="fa-brands fa-facebook-square"></i></a>
+        <a class="text-white m-2 " href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a class="text-white m-2 " href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+        <a class="text-white m-2 " href="https://www..com"><i class="fa-brands fa-tiktok"></i></a>
+        <br><br><br>
+      </div>
+  </footer>
 
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<footer class="bg-dark text-center text-white pt-5">
-  <h1>Edu Smart</h1>
-  <br>
-  <p class="text-white-50">Office 41, Zawaya Buildin, Ghala Muscat, <br>
 
-  Sultanate of Oman</p>
-  <br>
-  
-
-<div class="text-white">
-  
-     <a class="text-white-50" href="">Terms of service</a>   | 
-     <a class="text-white-50" href="">Privacy policy</a>
-     
-  </div>
-  <div class="footer-icon text-white-50 ">
-      <a class="text-white" href="https://www.facebook.com"><i class="fa-brands fa-facebook-square"></i></a>
-      <a class="text-white" href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      <a class="text-white" href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
-      <a class="text-white" href="https://www..com"><i class="fa-brands fa-tiktok"></i></a>
-      <br><br><br>
-    </div>
-</footer>
 </html>
